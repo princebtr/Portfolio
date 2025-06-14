@@ -18,7 +18,6 @@ const layout = () => {
       <div className="sidebar-section">
         <div className={toggle ? "sidebar-toggle" : "sidebar"}>
           <div className="icon">
-            <Menu />
             <p onClick={handleToggle}>
               {toggle ? (
                 <TbArrowBigLeftLinesFilled size={30} />
@@ -27,6 +26,7 @@ const layout = () => {
               )}
             </p>
           </div>
+          <Menu toggle={toggle} />
         </div>
         <div className="container">
           <Home />
