@@ -1,0 +1,33 @@
+.section-certs {
+  margin-bottom: 60px;
+}
+
+.section-certs h2 {
+  font-size: 28px;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.cert-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cert-card {
+  background-color: #2e2e42;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-card a {
+  background-color: var(--accent);
+  padding: 6px 12px;
+  color: #1e1e2f;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}

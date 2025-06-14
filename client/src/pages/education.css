@@ -1,0 +1,17 @@
+.section-edu {
+  margin-bottom: 60px;
+}
+
+.section-edu h2 {
+  font-size: 28px;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.card {
+  color: white;
+  background-color: #2e2e42;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 255, 224, 0.1);
+}

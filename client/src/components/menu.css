@@ -1,22 +1,43 @@
 .profile-pic {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  display: flex;
-  vertical-align: middle;
-  margin: 0 auto;
-  margin-top: 8px;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  margin: 10px auto 20px auto;
+  /* border: 3px solid var(--accent); */
+  /* box-shadow: 0 0 10px var(--accent); */
 }
+
 .nav-item {
-  color: beige;
-  margin-top: 30px;
-  text-align: left;
-  margin-left: 40px;
+  margin: 15px 0;
+  transition: background 0.3s ease;
 }
+
 .nav-link {
-  margin-top: 20px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: var(--text-light);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
+
+.nav-link:hover {
+  background-color: var(--hover);
+  transform: translateX(5px);
+}
+
 .nav-link svg {
   margin-right: 10px;
+}
+
+.menu-collapsed .nav-link {
+  justify-content: center;
+  padding: 12px;
+}
+
+.menu-collapsed .nav-link:hover {
+  background-color: var(--hover);
+  border-radius: 8px;
 }

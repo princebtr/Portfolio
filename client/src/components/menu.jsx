@@ -1,5 +1,6 @@
 import React from "react";
 import "./menu.css";
+import { TbCertificate } from "react-icons/tb";
 import {
   FcHome,
   FcAbout,
@@ -40,7 +41,7 @@ function Menu({ toggle }) {
           </div>
           <div className="nav-item">
             <div className="nav-link">
-              <FcBiotech size={30} /> Tech Stack
+              <FcBiotech size={30} /> Skills
             </div>
           </div>
           <div className="nav-item">
@@ -51,6 +52,12 @@ function Menu({ toggle }) {
           <div className="nav-item">
             <div className="nav-link">
               <FcIdea size={30} /> Projects
+            </div>
+          </div>
+          <div className="nav-item">
+            <div className="nav-link">
+              <TbCertificate size={30} color="green" />
+              Certifications
             </div>
           </div>
           <div className="nav-item">
@@ -89,6 +96,11 @@ function Menu({ toggle }) {
           <div className="nav-item">
             <div className="nav-link">
               <FcIdea title="Projects" size={30} />
+            </div>
+          </div>
+          <div className="nav-item">
+            <div className="nav-link">
+              <TbCertificate title="Certificates" size={30} color="green" />
             </div>
           </div>
           <div className="nav-item">

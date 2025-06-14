@@ -1,24 +1,63 @@
+:root {
+  --bg-dark: #1e1e2f;
+  --bg-sidebar: #29293d;
+  --accent: #00ffe0;
+  --text-light: #f0f0f0;
+  --hover: #3a3a5a;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
 .sidebar-section {
   display: flex;
+  min-height: 100vh;
 }
+
+.sidebar,
+.sidebar-toggle {
+  background-color: var(--bg-sidebar);
+  padding: 20px 10px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  container: fixed;
+}
+
 .sidebar {
   width: 90px;
-  height: 100vh;
-  background-color: #0de3cd;
+  position: fixed;
+  height: 100%;
 }
+
 .sidebar-toggle {
-  width: 230px;
-  height: 100vh;
-  background-color: #0de3cd;
+  width: 250px;
+  position: fixed;
+  height: 100%;
 }
+
 .icon {
   display: flex;
-  align-items: right;
-  cursor: pointer;
-  justify-content: right;
+  justify-content: flex-end;
 }
+
 .icon p svg {
-  color: beige;
-  background-color: #f29f67;
-  margin-top: 30px;
+  color: var(--text-light);
+  background-color: var(--accent);
+  padding: 6px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.icon p svg:hover {
+  transform: scale(1.1);
+  background-color: #00d6c0;
+}
+
+.container {
+  flex: 1;
+  padding: 30px;
 }

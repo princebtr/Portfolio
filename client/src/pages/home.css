@@ -1,0 +1,50 @@
+.home-container {
+  height: 300px;
+  color: white;
+}
+.home-content h2 {
+  padding: 5px;
+  padding-top: 50px;
+}
+.home-content h1 {
+  padding: 5px;
+  padding-top: 5px;
+  color: chocolate;
+}
+.home-button {
+  display: flex;
+  margin-top: 20px;
+}
+.btn-hire {
+  width: 200px;
+  background-color: pink;
+  border: none;
+  color: #1e1e2f;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-hire:hover {
+  background-color: white;
+  transform: translateY(-2px);
+}
+.btn-resume {
+  width: 200px;
+  margin-left: 18px;
+  background-color: #f29f67;
+  border: none;
+  color: #1e1e2f;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-resume:hover {
+  background-color: white;
+  transform: translateY(-2px);
+}
