@@ -6,7 +6,7 @@ import Resume from "../assets/docs/PrinceResumeGemini.pdf"; // Assuming you have
 const home = () => {
   return (
     <>
-      <div className="container-fluid home-container">
+      <div id="home" className="container-fluid home-container">
         <div className="container home-content">
           <h2>Hello👋 I'm a</h2>
           <h1>

@@ -26,7 +26,7 @@ const skillIcons = [
 
 const Skills = () => {
   return (
-    <div className="section-skills">
+    <div id="skills" className="section-skills">
       <h2>Tech Stack & Skills</h2>
       <div className="skills-grid">
         {skillIcons.map((skill, idx) => (

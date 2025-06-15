@@ -10,6 +10,7 @@ import {
   FcBusinessContact,
   FcIdea,
 } from "react-icons/fc";
+import { Link } from "react-scroll";
 
 function Menu({ toggle }) {
   return (
@@ -23,90 +24,135 @@ function Menu({ toggle }) {
               className="profile-pic"
             />
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcHome size={30} /> Home
-            </div>
+            <Link to="home" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcHome size={30} /> Home
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcAbout size={30} />
-              About
-            </div>
+            <Link to="about" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcAbout size={30} /> About
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcInspection size={30} /> Work Experience
-            </div>
+            <Link to="education" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcReading size={30} /> Education
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcBiotech size={30} /> Skills
-            </div>
+            <Link to="workexperience" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcInspection size={30} /> Work Experience
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcReading size={30} /> Education
-            </div>
+            <Link to="skills" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcBiotech size={30} /> Skills
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcIdea size={30} /> Projects
-            </div>
+            <Link to="project" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcIdea size={30} /> Projects
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <TbCertificate size={30} color="green" />
-              Certifications
-            </div>
+            <Link to="certificate" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <TbCertificate size={30} color="green" /> Certifications
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcBusinessContact size={30} /> Contact
-            </div>
+            <Link to="contact" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcBusinessContact size={30} /> Contact
+              </div>
+            </Link>
           </div>
         </div>
       ) : (
         <div className="menu-collapsed">
           <div className="nav-item">
-            <div className="nav-link">
-              <FcHome title="Home" size={30} />
-            </div>
+            <Link to="home" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcHome title="Home" size={30} />
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcAbout title="About" size={30} />
-            </div>
+            <Link to="about" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcAbout title="About" size={30} />
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcInspection title="Work Experience" size={30} />
-            </div>
+            <Link to="education" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcReading title="Education" size={30} />
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcBiotech title="Tech Stack" size={30} />
-            </div>
+            <Link to="workexperience" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcInspection title="Work Experience" size={30} />
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcReading title="Education" size={30} />
-            </div>
+            <Link to="skills" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcBiotech title="Skills" size={30} />
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcIdea title="Projects" size={30} />
-            </div>
+            <Link to="project" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcIdea title="Projects" size={30} />
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <TbCertificate title="Certificates" size={30} color="green" />
-            </div>
+            <Link to="certificate" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <TbCertificate title="Certificates" size={30} color="green" />
+              </div>
+            </Link>
           </div>
+
           <div className="nav-item">
-            <div className="nav-link">
-              <FcBusinessContact title="Contact" size={30} />
-            </div>
+            <Link to="contact" smooth duration={100} offset={-100}>
+              <div className="nav-link">
+                <FcBusinessContact title="Contact" size={30} />
+              </div>
+            </Link>
           </div>
         </div>
       )}

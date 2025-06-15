@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import Home from "../pages/home";
-import About from "../pages/about";
 import {
   TbArrowBigLeftLinesFilled,
   TbArrowBigRightLinesFilled,
 } from "react-icons/tb";
+
 import "./layout.css";
 import Menu from "./menu";
+
+import Home from "../pages/home";
+import About from "../pages/about";
 import Certificates from "../pages/certificates";
 import WorkExperience from "../pages/workExperience";
 import Skills from "../pages/skills";
@@ -41,9 +43,10 @@ const Layout = () => {
       <div className={`container ${toggle ? "expanded" : "collapsed"}`}>
         <Home />
         <About />
+        <Education />
         <WorkExperience />
         <Skills />
-        <Education />
+
         <Projects />
         <Certificates />
         <Contact />

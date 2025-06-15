@@ -9,7 +9,7 @@ const Certificates = () => {
   ];
 
   return (
-    <div className="section-certs">
+    <div id="certificate" className="section-certs">
       <h2>Certificates</h2>
       <div className="cert-grid">
         {certs.map((cert, idx) => (

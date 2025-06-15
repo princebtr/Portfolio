@@ -21,6 +21,7 @@
   padding: 10px 20px;
   border-radius: 8px;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .nav-link:hover {
