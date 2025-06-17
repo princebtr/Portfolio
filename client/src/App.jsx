@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Layout from "./components/layout";
+import { useTheme } from "./context/ThemeContext.jsx";
 // import Home from "./pages/home";
 // import About from "./pages/about";
 // import Certificates from "./pages/certificates";
@@ -11,10 +12,12 @@ import Layout from "./components/layout";
 // import Projects from "./pages/project";
 
 export default function App() {
+  const { theme } = useTheme();
   return (
     <>
-      <Layout />
-      {/* <div className="container">
+      <div id={theme}>
+        <Layout />
+        {/* <div className="container">
         <Home />
         <About />
         <Education />
@@ -24,6 +27,7 @@ export default function App() {
         <Certificates />
         <Contact />
       </div> */}
+      </div>
       <ScrollToTop
         smooth
         color="#ffffff"

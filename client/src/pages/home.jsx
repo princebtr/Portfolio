@@ -1,12 +1,27 @@
 import React from "react";
 import "./home.css";
 import Typewriter from "typewriter-effect";
-import Resume from "../assets/docs/PrinceResumeGemini.pdf"; // Assuming you have a resume file in the assets folder
+import Resume from "../assets/docs/PrinceResumeGemini.pdf";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import { useTheme } from "../context/ThemeContext.jsx";
 
-const home = () => {
+const Home = () => {
+  const { theme, setTheme } = useTheme();
+
+  const handleTheme = () => {
+    setTheme((prevState) => (prevState === "light" ? "dark" : "light"));
+  };
+
   return (
     <>
       <div id="home" className="container-fluid home-container">
+        <div className="theme-btn" onClick={handleTheme}>
+          {theme === "light" ? (
+            <BsFillMoonStarsFill size={30} />
+          ) : (
+            <BsFillSunFill size={30} />
+          )}
+        </div>
         <div className="container home-content">
           <h2>Hello👋 I'm a</h2>
           <h1>
@@ -22,6 +37,7 @@ const home = () => {
               }}
             />
           </h1>
+
           <div className="home-button">
             <button className="btn-hire">Hire Me</button>
             <a
@@ -38,4 +54,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

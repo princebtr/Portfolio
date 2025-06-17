@@ -48,3 +48,27 @@
   background-color: white;
   transform: translateY(-2px);
 }
+.theme-btn {
+  position: fixed;
+  margin-right: 22px;
+  margin-top: 15px;
+  top: 20px;
+  right: 20px;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-bg, #f29f67);
+  color: var(--accent-text, #1e1e2f);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--accent-hover, #f0803c);
+}

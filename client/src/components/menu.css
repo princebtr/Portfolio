@@ -22,6 +22,7 @@
   border-radius: 8px;
   transition: 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -41,4 +42,28 @@
 .menu-collapsed .nav-link:hover {
   background-color: var(--hover);
   border-radius: 8px;
+}
+
+.active > .nav-link {
+  background-color: var(--active) !important;
+  border-left: 3px solid var(--accent);
+  color: var(--text-white) !important;
+  transform: translateX(0);
+  font-weight: bold;
+}
+
+.nav-link:hover:not(.active > .nav-link) {
+  background-color: var(--hover);
+  transform: translateX(5px);
+}
+
+.menu-collapsed .active > .nav-link {
+  border-left: none;
+  border-bottom: 3px solid var(--accent);
+}
+
+:root {
+  --active: rgba(33, 150, 243, 0.15);
+  --accent: #2196f3;
+  --text-dark: #2c3e50;
 }

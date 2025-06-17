@@ -7,3 +7,34 @@
   min-width: 320px;
   min-height: 100vh; */
 }
+
+/* #light {
+  background-color: #f5f5f5;
+  color: #1e1e1e;
+}
+
+#dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+} */
+/* Light Theme */
+#light {
+  background-color: #f5f5f5;
+  --text-color: #1e1e1e;
+  --card-bg: #ffffff;
+  --sidebar-bg: #eaeaea;
+  --hover: rgba(0, 0, 0, 0.05);
+  --accent: #007acc;
+  --text-light: #333;
+}
+
+/* Dark Theme */
+#dark {
+  background-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --card-bg: #2e2e42;
+  --sidebar-bg: #29293d;
+  --hover: rgba(255, 255, 255, 0.1);
+  --accent: #00ffe0;
+  --text-light: #f0f0f0;
+}
