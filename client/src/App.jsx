@@ -31,7 +31,7 @@ export default function App() {
       <ScrollToTop
         smooth
         color="#ffffff"
-        style={{ backgroundColor: "var(--accent)", borderRadius: "80px" }}
+        style={{ backgroundColor: "blue", borderRadius: "80px" }}
       />
     </>
   );

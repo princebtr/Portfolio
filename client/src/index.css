@@ -1,40 +1,42 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
+/* Base Theme Variables */
+:root {
+  --transition-speed: 0.3s;
+  --font-main: "Segoe UI", sans-serif;
+  --card-radius: 12px;
 }
 
-/* #light {
-  background-color: #f5f5f5;
-  color: #1e1e1e;
-}
-
-#dark {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
-} */
 /* Light Theme */
 #light {
-  background-color: #f5f5f5;
-  --text-color: #1e1e1e;
+  background-color: #f9fafb;
+  --bg-color: #f9fafb;
+  --text-color: #1a1a1a;
   --card-bg: #ffffff;
-  --sidebar-bg: #eaeaea;
+  --sidebar-bg: #eaecef;
   --hover: rgba(0, 0, 0, 0.05);
   --accent: #007acc;
-  --text-light: #333;
+  --text-light: #444;
+  --active: rgba(0, 122, 204, 0.15);
 }
 
 /* Dark Theme */
 #dark {
-  background-color: #1e1e1e;
+  background-color: #1e1e2f;
+  --bg-color: #1e1e2f;
   --text-color: #f5f5f5;
-  --card-bg: #2e2e42;
-  --sidebar-bg: #29293d;
-  --hover: rgba(255, 255, 255, 0.1);
+  --card-bg: #2c2c3e;
+  --sidebar-bg: #2a2a3d;
+  --hover: rgba(255, 255, 255, 0.08);
   --accent: #00ffe0;
-  --text-light: #f0f0f0;
+  --text-light: #ccc;
+  --active: rgba(0, 255, 224, 0.15);
+}
+
+/* Body Defaults */
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed) ease,
+    color var(--transition-speed) ease;
 }

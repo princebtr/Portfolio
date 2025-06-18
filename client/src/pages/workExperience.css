@@ -8,6 +8,11 @@
   margin-bottom: 20px;
 }
 
+.section-work h5 {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
 .experience-container {
   display: flex;
   flex-direction: column;
@@ -15,17 +20,18 @@
 }
 
 .experience-card {
-  background-color: #2e2e42;
+  background-color: var(--card-bg);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 255, 224, 0.1);
+  box-shadow: 0 0 8px var(--hover);
+  color: var(--text-color);
 }
 
 .experience-card h3 {
   margin-bottom: 5px;
 }
 
-.experience-card button {
+.experience-card a {
   margin-top: 15px;
   background-color: var(--accent);
   border: none;
@@ -34,4 +40,8 @@
   color: #1e1e2f;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+}
+.experience-card a:hover {
+  background-color: var(--hover);
 }

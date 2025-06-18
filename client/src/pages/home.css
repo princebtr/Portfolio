@@ -1,57 +1,57 @@
 .home-container {
   height: 300px;
-  color: white;
+  color: var(--text-color);
 }
+
 .home-content h2 {
   padding: 5px;
   padding-top: 50px;
 }
+
 .home-content h1 {
   padding: 5px;
   padding-top: 5px;
-  color: chocolate;
+  color: var(--accent);
 }
+
 .home-button {
   display: flex;
   margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
-.btn-hire {
-  width: 200px;
-  background-color: pink;
-  border: none;
-  color: #1e1e2f;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.btn-hire:hover {
-  background-color: white;
-  transform: translateY(-2px);
-}
+
+.btn-hire,
 .btn-resume {
   width: 200px;
-  margin-left: 18px;
-  background-color: #f29f67;
   border: none;
-  color: #1e1e2f;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
   text-decoration: none;
+  text-align: center;
 }
 
+.btn-hire {
+  background-color: pink;
+  color: #1e1e2f;
+}
+
+.btn-resume {
+  background-color: #f29f67;
+  color: #1e1e2f;
+}
+
+.btn-hire:hover,
 .btn-resume:hover {
   background-color: white;
   transform: translateY(-2px);
 }
+
 .theme-btn {
   position: fixed;
-  margin-right: 22px;
-  margin-top: 15px;
   top: 20px;
   right: 20px;
   height: 48px;
@@ -59,8 +59,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-bg, #f29f67);
-  color: var(--accent-text, #1e1e2f);
+  background-color: var(--accent);
+  color: #1e1e2f;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -70,5 +70,5 @@
 
 .theme-btn:hover {
   transform: scale(1.05);
-  background-color: var(--accent-hover, #f0803c);
+  background-color: #f0803c;
 }

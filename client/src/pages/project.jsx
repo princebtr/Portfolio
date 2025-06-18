@@ -4,33 +4,33 @@ import "./project.css";
 const Projects = () => {
   const projectData = [
     {
-      title: "MoneyMaze",
+      title: "SpendWise - Finance Tracker",
       tech: "MERN",
-      img: "https://www.crio.do/blog/content/images/2020/09/Sep_01.png",
-      link: "#",
+      img: "https://res.cloudinary.com/djnerwn8s/image/upload/v1750269441/c447e2ad-4351-4503-9c09-5fc2faf4c7f2_mvktsm.jpg",
+      link: "https://github.com/princebtr/SpendWise-FinanceTracker",
     },
     {
       title: "Brain Tumor Classifier",
       tech: "Python, CNN",
-      img: "https://www.crio.do/blog/content/images/2020/09/Sep_01.png",
-      link: "#",
+      img: "https://res.cloudinary.com/djnerwn8s/image/upload/v1750269592/e1a5c1cc-5f4f-487c-a1b9-145c1d2bd2b2_ibqdoo.jpg",
+      link: "https://github.com/princebtr/Brain_Tumor_WebApp",
     },
     {
-      title: "Workout App",
-      tech: "Node, Bootstrap",
-      img: "https://www.crio.do/blog/content/images/2020/09/Sep_01.png",
-      link: "#",
+      title: "ATM Simulator",
+      tech: "Java, Swing",
+      img: "https://res.cloudinary.com/djnerwn8s/image/upload/v1750269722/ebd24c11-f60e-458c-ba4c-48f521bc4ee5_geka2a.jpg",
+      link: "https://github.com/princebtr/ATM-Simulator-JAVA",
     },
     {
-      title: "Quotes App",
-      tech: "React + Express",
-      img: "https://www.crio.do/blog/content/images/2020/09/Sep_01.png",
-      link: "#",
+      title: "Rock Paper Scissors Game",
+      tech: "Python, Tkinter",
+      img: "https://res.cloudinary.com/djnerwn8s/image/upload/v1750269790/494eaed4-cd04-4c9a-b17d-484b0d8dba6c_bhdjna.jpg",
+      link: "https://github.com/princebtr/Rock-Paper-Scissor-game-Tkinter-Python",
     },
     {
-      title: "Weather Dashboard",
+      title: "Echos - Social Media App",
       tech: "MERN",
-      img: "https://www.crio.do/blog/content/images/2020/09/Sep_01.png",
+      img: "https://res.cloudinary.com/djnerwn8s/image/upload/v1750269949/05fc9be4-15b5-4c77-b0bd-15a34323d959_pg9a57.jpg",
       link: "#",
     },
   ];
@@ -51,7 +51,7 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
+    const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
   }, []);
 

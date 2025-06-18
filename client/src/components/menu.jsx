@@ -19,7 +19,7 @@ function Menu({ toggle }) {
         <div>
           <div className="profile-pic">
             <img
-              src="https://img.freepik.com/premium-photo/profile-icon-white-background_941097-162371.jpg"
+              src="https://res.cloudinary.com/djnerwn8s/image/upload/v1750268916/1737226346907_xfjod3.jpg"
               alt="Profile"
               className="profile-pic"
             />

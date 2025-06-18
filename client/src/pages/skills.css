@@ -12,21 +12,39 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .skill-box {
-  background-color: #2e2e42;
+  background-color: var(--card-bg);
+  color: var(--text-color);
   padding: 15px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100px;
-  box-shadow: 0 0 6px rgba(0, 255, 224, 0.08);
+  box-shadow: 0 0 6px var(--hover);
+  transition: transform 0.2s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
 }
 
 .skill-box svg {
   font-size: 28px;
   margin-bottom: 8px;
   color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .skill-box {
+    width: 80px;
+    padding: 12px;
+  }
+
+  .skill-box svg {
+    font-size: 24px;
+  }
 }

@@ -41,12 +41,18 @@ const WorkExperience = () => {
               icon={<FcApproval />}
             >
               <h3 className="vertical-timeline-element-title">
-                Creative Director
+                Frontend Developer <h6>February 2023 – March 2023</h6>
               </h3>
-              <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+              <h4 className="vertical-timeline-element-subtitle">
+                Zidio Development
+              </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
+                • Collaborated with international team members via GitHub to
+                develop a full-stack project.
+                <br /> • Gained hands-on experience in backend and frontend
+                development, database integration.
+                <br />• Enhanced teamwork, version control, and remote
+                collaboration skills while working across different time zones.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -60,12 +66,18 @@ const WorkExperience = () => {
               icon={<FcApproval />}
             >
               <h3 className="vertical-timeline-element-title">
-                Creative Director
+                Coding Blocks <h6>Jan 2024 – July 2024</h6>
               </h3>
-              <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+              <h4 className="vertical-timeline-element-subtitle">
+                Machine Learning & Data Science training
+              </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
+                • Learned Python libraries: NumPy, Pandas, Matplotlib, Seaborn,
+                Scikit-Learn, TensorFlow.
+                <br />• Gained hands-on experience in data preprocessing,
+                feature engineering, and model evaluation. <br />• Worked on
+                real-world datasets for predictive analytics and data
+                visualization.
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -74,15 +86,33 @@ const WorkExperience = () => {
         <div className="experience-container">
           <div className="experience-card">
             <h3>Frontend Developer – Zidio Development</h3>
-            <p>June 2023 – Aug 2023</p>
-            <p>Worked on developing UI components using React and Tailwind.</p>
-            <button>View Certificate</button>
+            <p>February 2023 – March 2023</p>
+            <p>
+              • Collaborated with international team members via GitHub to
+              develop a full-stack project.
+              <br /> • Gained hands-on experience in backend and frontend
+              development, database integration.
+              <br />• Enhanced teamwork, version control, and remote
+              collaboration skills while working across different time zones.
+            </p>
+
+            <a href="https://drive.google.com/file/d/1_wqGMQHkfApZ10Bdik47ibnqAdzfFJ9M/view">
+              View Certificate
+            </a>
           </div>
           <div className="experience-card">
-            <h3>Full Stack Intern – Company B</h3>
-            <p>Jan 2024 – Mar 2024</p>
-            <p>Built APIs and integrated frontend with backend services.</p>
-            <button>View Certificate</button>
+            <h3>Machine Learning & Data Science training – Coding Blocks</h3>
+            <p>Jan 2024 – July 2024</p>
+            <p>
+              • Learned Python libraries: NumPy, Pandas, Matplotlib, Seaborn,
+              Scikit-Learn, TensorFlow.
+              <br />• Gained hands-on experience in data preprocessing, feature
+              engineering, and model evaluation. <br />• Worked on real-world
+              datasets for predictive analytics and data visualization.
+            </p>
+            <a href="https://drive.google.com/file/d/1uwT6VCyGvZPcuYVK0J1mDQI-UKjTyoJ9/view">
+              View Certificate
+            </a>
           </div>
         </div>
       )}

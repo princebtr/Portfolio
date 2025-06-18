@@ -43,14 +43,14 @@ const Education = () => {
                 icon={<FcApproval />}
               >
                 <h3 className="vertical-timeline-element-title">
-                  Creative Director
+                  High School and Intermediate
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
-                  Miami, FL
+                  LBPS, Aurangabad
                 </h4>
                 <p>
-                  Creative Direction, User Experience, Visual Design, Project
-                  Management, Team Leading
+                  Completed High School in 2020 with 76% and Intermediate with
+                  74%
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -67,14 +67,14 @@ const Education = () => {
                 icon={<FcApproval />}
               >
                 <h3 className="vertical-timeline-element-title">
-                  Creative Director
+                  BTech in Computer Science and Engineering
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
-                  Miami, FL
+                  GLA University, Mathura
                 </h4>
                 <p>
-                  Creative Direction, User Experience, Visual Design, Project
-                  Management, Team Leading
+                  Pre final year student with a GPA of 8.5, focusing on data
+                  structures, DBMS, machine learning, and full-stack.
                 </p>
               </VerticalTimelineElement>
             </VerticalTimeline>
@@ -86,7 +86,10 @@ const Education = () => {
             <p>GPA: 8.5</p>
             <p>Relevant Coursework:</p>
             <p>
-              Learned data structures, DBMS, ML, and full-stack development.
+              Mathematical Foundations of Computer Science, Introduction to
+              Algorithms, Data Structures and Algorithms, Object Oriented
+              Programming, Database Management System, Machine Learning,
+              Operating Systems, Computer Network
             </p>
           </div>
         )}

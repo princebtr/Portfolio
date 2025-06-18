@@ -15,12 +15,14 @@
 }
 
 .cert-card {
-  background-color: #2e2e42;
+  background-color: var(--card-bg);
   padding: 20px;
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--text-color);
+  box-shadow: 0 0 8px var(--hover);
 }
 
 .cert-card a {

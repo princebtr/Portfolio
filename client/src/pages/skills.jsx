@@ -8,20 +8,30 @@ import {
   FaJs,
   FaGitAlt,
   FaPython,
+  FaJava,
+  FaGithub,
 } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { SiMysql } from "react-icons/si";
 import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
 
 const skillIcons = [
+  { icon: <FaJava />, label: "Java" },
+  { icon: <FaReact />, label: "React" },
+  { icon: <FaPython />, label: "Python" },
+  { icon: <FaGitAlt />, label: "Git" },
+  { icon: <FaGithub />, label: "GitHub" },
   { icon: <FaHtml5 />, label: "HTML5" },
   { icon: <FaCss3Alt />, label: "CSS3" },
   { icon: <FaJs />, label: "JavaScript" },
-  { icon: <FaReact />, label: "React" },
   { icon: <FaNode />, label: "Node.js" },
   { icon: <SiExpress />, label: "Express.js" },
   { icon: <SiMongodb />, label: "MongoDB" },
   { icon: <SiTailwindcss />, label: "Tailwind" },
-  { icon: <FaGitAlt />, label: "Git" },
-  { icon: <FaPython />, label: "Python" },
+  { icon: <VscVscode />, label: "VS Code" },
+  { icon: <SiMysql />, label: "MySQL" },
+  { icon: <FaPython />, label: "Flask" },
+  { icon: <FaPython />, label: "Django" },
 ];
 
 const Skills = () => {

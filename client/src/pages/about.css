@@ -9,20 +9,21 @@
 }
 
 .card {
-  color: white;
-  background-color: #2e2e42;
+  color: var(--text-color);
+  background-color: var(--card-bg);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 255, 224, 0.1);
+  box-shadow: 0 0 8px var(--hover);
 }
 
 .about-highlights {
   margin-top: 15px;
   padding-left: 20px;
-  list-style: none;
+  list-style: disc;
 }
 
 .about-highlights li {
   margin-bottom: 10px;
   font-size: 17px;
+  /* color: var(--text-light); */
 }
