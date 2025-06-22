@@ -1,5 +1,6 @@
 import React from "react";
 import "./certificates.css";
+import { toast } from "react-toastify";
 
 const Certificates = () => {
   const certs = [
@@ -33,7 +34,12 @@ const Certificates = () => {
         {certs.map((cert, idx) => (
           <div key={idx} className="cert-card">
             <p>{cert.name}</p>
-            <a href={cert.link} target="_blank" rel="noreferrer">
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => toast.info("Redirecting you to Certificates !!!")}
+            >
               View Certificate
             </a>
           </div>

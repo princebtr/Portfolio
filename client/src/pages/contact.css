@@ -1,3 +1,4 @@
+/* Section layout */
 .section-edu {
   margin-bottom: 60px;
 }
@@ -6,8 +7,10 @@
   font-size: 28px;
   color: var(--accent);
   margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Card wrapper */
 .card {
   background-color: var(--card-bg);
   padding: 20px;
@@ -16,41 +19,53 @@
   color: var(--text-color);
 }
 
+/* Container with left image and right content */
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+/* Image column */
 .contact-left {
   flex: 1;
-  min-width: 300px;
-  max-width: 450px;
+  padding-top: 100px;
+  min-width: 350px;
+  max-width: 500px;
 }
 
 .contact-left img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
 
+/* Right column with social + form */
 .contact-right {
   flex: 1;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Social section */
 .contact-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .social-icons {
   display: flex;
+  justify-content: center;
   gap: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .social-icons .icon {
@@ -64,10 +79,17 @@
   color: #00d6c0;
 }
 
+/* Divider */
 .divider {
-  margin: 15px 0;
-  text-align: center;
+  margin: 10px 0;
   font-weight: bold;
+  text-align: center;
+}
+
+/* Form */
+.contact-form {
+  width: 100%;
+  max-width: 400px;
 }
 
 .contact-form input,
@@ -84,8 +106,8 @@
 .contact-form button {
   width: 100%;
   padding: 12px;
-  background-color: var(--sidebar-bg);
-  color: var(--text-light);
+  background-color: var(--accent);
+  color: #1e1e2f;
   border: none;
   border-radius: 8px;
   font-weight: bold;
@@ -94,6 +116,34 @@
 }
 
 .contact-form button:hover {
-  background-color: var(--accent);
+  background-color: #16a34a;
   color: #000;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heart {
+  color: red;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
 }

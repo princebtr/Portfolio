@@ -7,6 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FcApproval } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 const WorkExperience = () => {
   const [roadmap, setRoadmap] = useState(false);
@@ -96,7 +97,12 @@ const WorkExperience = () => {
               collaboration skills while working across different time zones.
             </p>
 
-            <a href="https://drive.google.com/file/d/1_wqGMQHkfApZ10Bdik47ibnqAdzfFJ9M/view">
+            <a
+              href="https://drive.google.com/file/d/1_wqGMQHkfApZ10Bdik47ibnqAdzfFJ9M/view"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => toast.info("Redirecting you to Certificates !!!")}
+            >
               View Certificate
             </a>
           </div>
@@ -110,7 +116,12 @@ const WorkExperience = () => {
               engineering, and model evaluation. <br />• Worked on real-world
               datasets for predictive analytics and data visualization.
             </p>
-            <a href="https://drive.google.com/file/d/1uwT6VCyGvZPcuYVK0J1mDQI-UKjTyoJ9/view">
+            <a
+              href="https://drive.google.com/file/d/1uwT6VCyGvZPcuYVK0J1mDQI-UKjTyoJ9/view"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => toast.info("Redirecting you to Certificates !!!")}
+            >
               View Certificate
             </a>
           </div>

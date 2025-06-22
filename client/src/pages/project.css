@@ -6,6 +6,7 @@
   font-size: 28px;
   color: var(--accent);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .carousel-wrapper {

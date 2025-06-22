@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./project.css";
+import { toast } from "react-toastify";
 
 const Projects = () => {
   const projectData = [
@@ -77,7 +78,12 @@ const Projects = () => {
                 <img src={proj.img} alt={proj.title} />
                 <h4>{proj.title}</h4>
                 <p>{proj.tech}</p>
-                <a href={proj.link} target="_blank" rel="noreferrer">
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => toast.info("Redirecting you to GitHub !!!")}
+                >
                   View on GitHub
                 </a>
               </div>

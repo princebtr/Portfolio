@@ -46,7 +46,7 @@
 
 .btn-hire:hover,
 .btn-resume:hover {
-  background-color: white;
+  background-color: #16a34a;
   transform: translateY(-2px);
 }
 

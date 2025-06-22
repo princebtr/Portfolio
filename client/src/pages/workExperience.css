@@ -6,6 +6,7 @@
   font-size: 28px;
   color: var(--accent);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .section-work h5 {
@@ -43,5 +44,5 @@
   text-decoration: none;
 }
 .experience-card a:hover {
-  background-color: var(--hover);
+  background-color: #16a34a;
 }

@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "proxy": "http://localhost:5174",
+  "version": "1.0.0",
+  "description": "portfolio webapp",
+  "homepage": "https://github.com/princebtr/Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/princebtr/Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princebtr/Portfolio.git"
+  },
+  "license": "MIT",
+  "author": "Prince_Kumar",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3",
+    "nodemailer-sendgrid-transport": "^0.2.0"
+  }
+}
