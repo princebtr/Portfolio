@@ -7,6 +7,8 @@ import { FaBars } from "react-icons/fa";
 
 import "./layout.css";
 import Menu from "./menu";
+import StyleSwitcher from "./StyleSwitcher";
+import { useTheme } from "../context/ThemeContext.jsx";
 
 import Home from "../pages/home";
 import About from "../pages/about";
@@ -18,11 +20,14 @@ import Contact from "../pages/contact";
 import Projects from "../pages/project";
 
 const Layout = () => {
-  const [toggle, setToggle] = useState(true);
+  const { layout } = useTheme();
+  const [sidebarOpen, setToggle] = useState(true);
+  // The top-nav layout has no collapsed state, so always show labels there.
+  const toggle = layout === "top" || sidebarOpen;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleToggle = () => {
-    setToggle(!toggle);
+    setToggle(!sidebarOpen);
   };
 
   const handleMobileToggle = () => {
@@ -31,6 +36,7 @@ const Layout = () => {
 
   return (
     <div className="sidebar-section">
+      <StyleSwitcher />
       {/* Mobile Hamburger Icon */}
       <div className="mobile-menu-icon">
         <FaBars size={26} onClick={handleMobileToggle} />

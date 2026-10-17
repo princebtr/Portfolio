@@ -1,5 +1,7 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
+import "./App.css";
+import "./styles/themes.css";
 import Layout from "./components/layout";
 import { useTheme } from "./context/ThemeContext.jsx";
 import { ToastContainer } from "react-toastify";
@@ -13,12 +15,12 @@ import { ToastContainer } from "react-toastify";
 // import Projects from "./pages/project";
 
 export default function App() {
-  const { theme } = useTheme();
+  const { theme, style, layout } = useTheme();
   return (
     <>
-      <div id={theme}>
+      <div id={theme} data-style={style} data-layout={layout}>
         <ToastContainer
-          position="top-right"
+          position="bottom-right"
           autoClose={5000}
           hideProgressBar={false}
           newestOnTop={false}
@@ -27,7 +29,7 @@ export default function App() {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="dark"
+          theme="light"
         />
         <Layout />
         {/* <div className="container">

@@ -13,7 +13,7 @@
 .card {
   background-color: #2e2e42;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   margin-bottom: 20px;
   box-shadow: 0 0 8px rgba(0, 255, 224, 0.1);
 }
@@ -27,7 +27,7 @@
 .skill-badge {
   background-color: var(--hover);
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: var(--radius);
   font-size: 14px;
 }
 
