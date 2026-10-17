@@ -23,7 +23,7 @@
 .experience-card {
   background-color: var(--card-bg);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   box-shadow: 0 0 8px var(--hover);
   color: var(--text-color);
 }
@@ -37,7 +37,7 @@
   background-color: var(--accent);
   border: none;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   color: #1e1e2f;
   font-weight: bold;
   cursor: pointer;

@@ -18,7 +18,7 @@
 .cert-card {
   background-color: var(--card-bg);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +31,7 @@
   padding: 6px 12px;
   color: #1e1e2f;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
 }
 

@@ -12,7 +12,7 @@
   color: var(--text-color);
   background-color: var(--card-bg);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   box-shadow: 0 0 8px var(--hover);
 }
 

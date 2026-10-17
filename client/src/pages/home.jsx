@@ -25,20 +25,25 @@ const Home = () => {
           )}
         </div>
         <div className="container home-content">
-          <h2>Hello👋 I'm a</h2>
+          <p className="home-kicker">SOFTWARE ENGINEER / BACKEND DEVELOPER <span /></p>
+          <h2>Hello, I&apos;m Prince.</h2>
           <h1>
             <Typewriter
               options={{
                 strings: [
-                  "Mern Developer !",
-                  "Java Developer !",
-                  "Full Stack Developer !",
+                  "Software Engineer",
+                  "Backend Developer",
+                  "Python & Django Developer",
                 ],
                 autoStart: true,
                 loop: true,
               }}
             />
           </h1>
+          <p className="home-intro">
+            I build reliable, scalable software with a focus on backend
+            engineering, clean architecture, and practical problem-solving.
+          </p>
 
           <div className="home-button">
             <Link
@@ -54,7 +59,7 @@ const Home = () => {
                 )
               }
             >
-              <button className="btn-hire">Hire Me</button>
+              <button className="btn-hire">Let&apos;s work together <span>↗</span></button>
             </Link>
 
             <a
@@ -63,8 +68,26 @@ const Home = () => {
               download="Prince_Resume.pdf"
               onClick={() => toast.success("Resume has been Downloaded !!!")}
             >
-              Download Resume
+              Download Resume <span>↓</span>
             </a>
+          </div>
+          <div className="home-meta">
+            <span><b>01</b> Based in India</span>
+            <span><b>02</b> Backend &amp; Full-stack focused</span>
+          </div>
+        </div>
+        <div className="hero-console" aria-label="Current engineering focus">
+          <div className="console-topbar">
+            <span className="console-dots"><i /><i /><i /></span>
+            <span>prince@portfolio ~/focus</span>
+            <span className="console-live">LIVE</span>
+          </div>
+          <div className="console-body">
+            <p><span className="console-prompt">$</span> cat current-focus.txt</p>
+            <p className="console-heading">building systems that hold up.</p>
+            <div className="console-row"><span>primary</span><strong>Python / Django / SQL</strong></div>
+            <div className="console-row"><span>craft</span><strong>APIs · data · architecture</strong></div>
+            <div className="console-row"><span>mode</span><strong className="console-status"><i /> shipping thoughtfully</strong></div>
           </div>
         </div>
       </div>

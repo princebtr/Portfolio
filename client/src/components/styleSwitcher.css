@@ -1,0 +1,117 @@
+.style-switcher {
+  position: fixed;
+  top: 20px;
+  right: 80px;
+  z-index: 1000;
+  font-family: var(--font-mono);
+}
+
+.style-trigger {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: var(--border-width, 1px) solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.style-trigger:hover {
+  border-color: var(--accent);
+}
+
+.style-trigger-label {
+  min-width: 64px;
+  text-align: left;
+}
+
+.style-chevron {
+  color: var(--text-light);
+  transition: transform 0.2s ease;
+}
+
+.style-chevron.is-open {
+  transform: rotate(180deg);
+}
+
+.style-dot {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--dot);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.style-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 220px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--card-bg);
+  border: var(--border-width, 1px) solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow), 0 16px 40px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
+}
+
+.style-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px;
+  background: transparent;
+  color: var(--text-color);
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+}
+
+.style-option:hover {
+  background: var(--hover);
+}
+
+.style-option.is-active {
+  background: var(--active);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.style-hint {
+  margin-left: auto;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .style-switcher {
+    top: 16px;
+    right: 72px;
+  }
+
+  .style-trigger {
+    height: 44px;
+    padding: 0 12px;
+  }
+
+  .style-trigger-label {
+    display: none;
+  }
+}

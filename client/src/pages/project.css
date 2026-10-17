@@ -33,7 +33,7 @@
   margin: 0 10px;
   background-color: var(--card-bg);
   color: var(--text-color);
-  border-radius: 12px;
+  border-radius: var(--radius);
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 8px var(--hover);
@@ -46,7 +46,7 @@
 
 .project-card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   height: 180px;
   object-fit: cover;
   margin-bottom: 10px;

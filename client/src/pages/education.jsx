@@ -6,12 +6,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FcApproval } from "react-icons/fc";
+import { TbSchool } from "react-icons/tb";
 
 const Education = () => {
   const [roadmap, setRoadmap] = useState(false);
 
-  const handleRoadmap = (event) => {
+  const handleRoadmap = () => {
     setRoadmap(!roadmap);
   };
   return (
@@ -31,16 +31,8 @@ const Education = () => {
             <VerticalTimeline>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{
-                  background: "rgb(33, 150, 243)",
-                  color: "#fff",
-                }}
-                contentArrowStyle={{
-                  borderRight: "7px solid  rgb(33, 150, 243)",
-                }}
-                date="2011 - present"
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                icon={<FcApproval />}
+                date="2020"
+                icon={<TbSchool />}
               >
                 <h3 className="vertical-timeline-element-title">
                   High School and Intermediate
@@ -50,21 +42,13 @@ const Education = () => {
                 </h4>
                 <p>
                   Completed High School in 2020 with 76% and Intermediate with
-                  74%
+                  74%.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{
-                  background: "rgb(33, 150, 243)",
-                  color: "#fff",
-                }}
-                contentArrowStyle={{
-                  borderRight: "7px solid  rgb(33, 150, 243)",
-                }}
-                date="2011 - present"
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                icon={<FcApproval />}
+                date="2022 - 2026"
+                icon={<TbSchool />}
               >
                 <h3 className="vertical-timeline-element-title">
                   BTech in Computer Science and Engineering
@@ -73,23 +57,23 @@ const Education = () => {
                   GLA University, Mathura
                 </h4>
                 <p>
-                  Pre final year student with a GPA of 8.5, focusing on data
-                  structures, DBMS, machine learning, and full-stack.
+                  B.Tech in Computer Science Engineering with a GPA of 8.5,
+                  focusing on data structures, databases, machine learning, and
+                  full-stack development.
                 </p>
               </VerticalTimelineElement>
             </VerticalTimeline>
           </div>
         ) : (
           <div className="card">
-            <h3>B.Tech in CSE – GLA University</h3>
-            <p>2022 – 2026</p>
+            <h3>B.Tech in Computer Science Engineering - GLA University</h3>
+            <p>2022 - 2026</p>
             <p>GPA: 8.5</p>
             <p>Relevant Coursework:</p>
             <p>
-              Mathematical Foundations of Computer Science, Introduction to
-              Algorithms, Data Structures and Algorithms, Object Oriented
-              Programming, Database Management System, Machine Learning,
-              Operating Systems, Computer Network
+              Data Structures &amp; Algorithms, Object-Oriented Programming,
+              Database Management Systems, Operating Systems, Computer Networks,
+              Machine Learning, Mathematical Foundations of Computer Science
             </p>
           </div>
         )}
